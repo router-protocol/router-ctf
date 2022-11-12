@@ -51,7 +51,6 @@ contract StakingPool {
 
     constructor(IERC20 _stakingToken) {
         rewardToken = new RouterCTFToken();
-        stakingToken[0] = _stakingToken;
         owner = msg.sender;
     }
 
